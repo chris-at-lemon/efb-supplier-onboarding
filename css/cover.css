@@ -1,0 +1,125 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #c2dfff;
+}
+body {
+    color: #333;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+    background: #fff;
+}
+#pot {
+    display: none;
+}
+#online-resource-center {
+    padding-left: 2px;
+    color: #666;
+}
+label {
+    font-weight: normal;
+}
+#password-label {
+    display: block;
+    width: 100%;
+}
+#forgot-password {
+    display: block;
+    float: right;
+}
+.submit-button {
+    float: right;
+}
+#footer {
+    font-size: 10px;
+    margin-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#version {
+    float: right;
+}
+.modal-body form {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+
+
+/*
+ * Affix and center
+ */
+
+@media (max-width: 699px) {
+    #form-container {
+        border-left: none;
+    }
+    #brand-container {
+        border-bottom: solid 1px #ccc;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+@media (min-width: 700px) {
+    /* Pull out the header and footer */
+    .cover-container {
+        width: 660px;
+    }
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    #form-container {
+        border-left: solid 1px #ccc;
+    }
+    form {
+        padding-left: 15px;
+    }
+    #brand-container {
+           margin-top: 70px;
+    }
+    /* Handle the widths */
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+}
